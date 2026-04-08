@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bekzod Bakhtiyorov | Finance Professional | University of Arizona</title>
+  <meta name="description" content="Bekzod Bakhtiyorov — Finance & Entrepreneurship student at the University of Arizona Eller College, aspiring wealth management professional with international experience." />
+  <meta property="og:title" content="Bekzod Bakhtiyorov | Professional Portfolio" />
+  <meta property="og:description" content="Finance student, data analyst, and aspiring wealth management professional." />
+
+  <!-- Inline SVG Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230F3F6D'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='bold' font-size='28' fill='%23CBB26A'>BB</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== CANVAS BACKGROUND ===================== -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ===================== LOADER ===================== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">BB</div>
+      <div class="loader-bar"><span></span></div>
+      <p class="loader-text">Loading Portfolio…</p>
+    </div>
+  </div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar">
+    <div class="nav-logo"><a href="#hero">BB</a></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#resume" class="nav-link">Résumé</a></li>
+      <li><a href="#video" class="nav-link">Persona</a></li>
+      <li><a href="#evolution" class="nav-link">Evolution</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-tag reveal-up">Finance & Entrepreneurship · Eller College of Management</div>
+      <h1 class="hero-name reveal-up">
+        <span class="name-first">Bekzod</span>
+        <span class="name-last">Bakhtiyorov</span>
+      </h1>
+      <p class="hero-tagline reveal-up">
+        Ambitious. Relationship-Oriented. Rising.
+      </p>
+      <p class="hero-sub reveal-up">
+        I'm a Finance student at the University of Arizona with a 3.8 GPA, international experience at the Ministry of Finance of Uzbekistan, and a passion for wealth management, data-driven decision making, and building meaningful connections.
+      </p>
+      <div class="hero-cta reveal-up">
+        <a href="#about" class="btn-primary">Explore My Story</a>
+        <a href="#contact" class="btn-secondary">Let's Connect</a>
+      </div>
+      <div class="hero-scroll-hint reveal-up">
+        <span>Scroll to discover</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </div>
+    <div class="hero-photo-wrap reveal-right">
+      <div class="hero-photo-glow"></div>
+      <img src="assets/images/professional_photo.jpg" alt="Bekzod Bakhtiyorov professional photo" class="hero-photo" id="hero-photo" />
+      <div class="hero-photo-badge">
+        <span class="badge-gpa">3.8 GPA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-label">Who I Am</span>
+      <h2 class="section-title">Driven by <span class="accent">Purpose</span>,<br/>Defined by <span class="accent">People</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text fade-in-left">
+        <p>
+          I'm Bekzod — a finance professional in the making, originally from Uzbekistan and currently pursuing my Bachelor of Science in Business Administration at the University of Arizona's Eller College of Management, with a major in Finance and a minor in Entrepreneurship.
+        </p>
+        <p>
+          What drives me isn't just numbers — it's the story behind them. Whether I'm building macroeconomic models at the Ministry of Finance of Uzbekistan, visualizing data with Tableau, or helping patrons at Campus Recreation, I bring the same energy: genuine care, intellectual curiosity, and a commitment to excellence.
+        </p>
+        <p>
+          I speak Uzbek, Russian, and English fluently — and I believe cross-cultural communication is one of the most powerful tools in any professional's toolkit. My goal is to break into wealth management, where I can blend financial analysis with the human side of client relationships.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <span class="highlight-icon">🎓</span>
+            <div>
+              <strong>Eller College of Management</strong>
+              <span>B.S. Finance + Entrepreneurship Minor</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">🌍</span>
+            <div>
+              <strong>Ministry of Finance, Uzbekistan</strong>
+              <span>Macroeconomic Intern — Summer 2025</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">🏆</span>
+            <div>
+              <strong>Academic Excellence</strong>
+              <span>Dean's List · EYUF Scholar · Global Wildcat Award</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual fade-in-right">
+        <div class="about-photo-stack">
+          <img src="assets/images/travelling SF photo.jpg" alt="Bekzod in San Francisco" class="about-photo about-photo-2" />
+          <img src="assets/images/professional_photo2.jpg" alt="Bekzod Bakhtiyorov" class="about-photo about-photo-1" />
+        </div>
+        <div class="about-stats">
+          <div class="stat-card" data-count="3">
+            <span class="stat-num" data-target="3">0</span>
+            <span class="stat-label">Languages</span>
+          </div>
+          <div class="stat-card" data-count="3">
+            <span class="stat-num" data-target="3.8">0</span>
+            <span class="stat-label">GPA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Awards & Honors</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Skills -->
+    <div class="skills-section">
+      <h3 class="skills-title">Core Skills & Strengths</h3>
+      <div class="skills-grid">
+        <div class="skill-orb" style="--delay:0s">
+          <div class="skill-orb-inner">
+            <span class="skill-icon">📊</span>
+            <span>Tableau & Data Visualization</span>
+          </div>
+        </div>
+        <div class="skill-orb" style="--delay:0.1s">
+          <div class="skill-orb-inner">
+            <span class="skill-icon">💹</span>
+            <span>Financial Modeling</span>
+          </div>
+        </div>
+        <div class="skill-orb" style="--delay:0.2s">
+          <div class="skill-orb-inner">
+            <span class="skill-icon">🤝</span>
+            <span>Cross-Cultural Communication</span>
+          </div>
+        </div>
+        <div class="skill-orb" style="--delay:0.3s">
+          <div class="skill-orb-inner">
+            <span class="skill-icon">📈</span>
+            <span>Microsoft Excel (Advanced)</span>
+          </div>
+        </div>
+        <div class="skill-orb" style="--delay:0.4s">
+          <div class="skill-orb-inner">
+            <span class="skill-icon">🎨</span>
+            <span>Adobe Photoshop & Canva</span>
+          </div>
+        </div>
+        <div class="skill-orb" style="--delay:0.5s">
+          <div class="skill-orb-inner">
+            <span class="skill-icon">🌐</span>
+            <span>Trilingual — Uzb · Rus · Eng</span>
+          </div>
+        </div>
+        <div class="skill-orb" style="--delay:0.6s">
+          <div class="skill-orb-inner">
+            <span class="skill-icon">🎯</span>
+            <span>Leadership & Teamwork</span>
+          </div>
+        </div>
+        <div class="skill-orb" style="--delay:0.7s">
+          <div class="skill-orb-inner">
+            <span class="skill-icon">🎬</span>
+            <span>Video Editing & Production</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESUME SECTION ===================== -->
+  <section id="resume">
+    <div class="section-header">
+      <span class="section-label">My Journey</span>
+      <h2 class="section-title">A Story of <span class="accent">Growth</span></h2>
+    </div>
+    <div class="resume-container">
+      <!-- Education -->
+      <div class="resume-column">
+        <h3 class="resume-col-title"><span class="col-icon">🎓</span> Education</h3>
+        <div class="timeline">
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Expected May 2027</div>
+              <h4>Bachelor of Science in Business Administration</h4>
+              <p class="timeline-org">University of Arizona — Eller College of Management, Tucson, AZ</p>
+              <ul>
+                <li>Major: Finance | Minor: Entrepreneurship</li>
+                <li>GPA: 3.8</li>
+                <li>Global Wildcat Tuition Award</li>
+                <li>Global Academic Excellence Award</li>
+                <li>Dean's List — Fall 2023 & Spring 2024</li>
+                <li>Dean's List with Distinction — Spring 2024</li>
+                <li>Academic Distinction 2023–2024</li>
+                <li>EYUF Full-Funded Scholarship, Uzbekistan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Experience -->
+      <div class="resume-column">
+        <h3 class="resume-col-title"><span class="col-icon">💼</span> Experience</h3>
+        <div class="timeline">
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">August 2025 – Present</div>
+              <h4>Student Finance Assistant</h4>
+              <p class="timeline-org">Bursar’s Office — University of Arizona, Tucson, AZ</p>
+              <ul>
+                <li>Process and verify student tuition payments, refunds, and account adjustments using university financial systems</li>
+                <li>Assist students with billing inquiries, payment plan enrollment, and financial hold resolution</li>
+                <li>Coordinate with Financial Aid and Student Accounts teams to reconcile balance discrepancies and ensure accuracy</li>
+                <li>Maintain accurate daily transaction records in compliance with university financial policies and procedures</li>
+                <li>Deliver professional, student-centered assistance in a high-volume campus finance environment</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">June 2025 – August 2025</div>
+              <h4>Intern — Macroeconomic Analysis</h4>
+              <p class="timeline-org">Ministry of Economy and Finance of Uzbekistan, Tashkent</p>
+              <ul>
+                <li>Conducted data analysis to support national macroeconomic forecasts and policy recommendations</li>
+                <li>Assisted in building economic models used for GDP growth projections, inflation trends, and fiscal planning</li>
+                <li>Collaborated with a cross-disciplinary team to assess the impact of policy changes on SME development and capital market growth</li>
+                <li>Analyzed policy impacts on SME growth and capital markets</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">March 2024 – May 2025</div>
+              <h4>Facility Attendant & Fitwell Attendant</h4>
+              <p class="timeline-org">University of Arizona Campus Recreation, Tucson, AZ</p>
+              <ul>
+                <li>Provided excellent service to 100+ instructors, clients, and public daily</li>
+                <li>Assisted with facility rentals, equipment sales, and client inquiries</li>
+                <li>Demonstrated professional phone and radio communication etiquette</li>
+                <li>Actively engaged in staff activities and team collaboration</li>
+                <li>Offered safe and effective spotting assistance for patron safety</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Activities & Interests -->
+    <div class="resume-extras fade-in-up">
+      <div class="extras-card">
+        <h4>Activities</h4>
+        <div class="extras-tags">
+          <span class="tag">Uzbek Students' Association</span>
+          <span class="tag">Investment Club</span>
+          <span class="tag">Youth Affairs Projects</span>
+          <span class="tag">BNAD200 Case Competition</span>
+        </div>
+      </div>
+      <div class="extras-card">
+        <h4>Languages</h4>
+        <div class="lang-bars">
+          <div class="lang-bar-item">
+            <span>Uzbek</span>
+            <div class="lang-bar"><div class="lang-fill" style="--pct:100%"></div></div>
+            <span>Native</span>
+          </div>
+          <div class="lang-bar-item">
+            <span>Russian</span>
+            <div class="lang-bar"><div class="lang-fill" style="--pct:100%"></div></div>
+            <span>Fluent</span>
+          </div>
+          <div class="lang-bar-item">
+            <span>English</span>
+            <div class="lang-bar"><div class="lang-fill" style="--pct:95%"></div></div>
+            <span>Fluent</span>
+          </div>
+        </div>
+      </div>
+      <div class="extras-card">
+        <h4>Interests</h4>
+        <div class="extras-tags">
+          <span class="tag">⚽ Soccer</span>
+          <span class="tag">🥊 Boxing</span>
+          <span class="tag">🏃 Running</span>
+          <span class="tag">🎵 Hip-Hop Music</span>
+          <span class="tag">🌍 International Travel</span>
+          <span class="tag">🍳 Cooking</span>
+          <span class="tag">📸 Adobe Photoshop</span>
+          <span class="tag">💹 Finance</span>
+          <span class="tag">🎬 Video Editing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PERSONA VIDEO SECTION ===================== -->
+  <section id="video">
+    <div class="section-header">
+      <span class="section-label">Professional Snapshot</span>
+      <h2 class="section-title">Hear It From <span class="accent">Me</span></h2>
+    </div>
+    <div class="video-container fade-in-up">
+      <div class="video-glow"></div>
+      <div class="video-wrapper">
+        <iframe
+          id="persona-video"
+          src="https://www.youtube.com/embed/38compFpnPA"
+          title="Bekzod Bakhtiyorov — Professional Persona Video"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <p class="video-caption">
+        In this video, I share my professional journey, what drives me, and where I'm headed — from Uzbekistan to the University of Arizona and beyond.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== EVOLUTION SECTION ===================== -->
+  <section id="evolution">
+    <div class="section-header">
+      <span class="section-label">Professional Persona Evolution</span>
+      <h2 class="section-title">Identity Meets <span class="accent">Reputation</span></h2>
+    </div>
+    <p class="section-intro fade-in-up">
+      Throughout this semester, through the Radian platform and my BCOM 314 coursework at the Eller College of Management, I collected and analyzed data that revealed how I see myself versus how others perceive me. Here is the story of my professional growth.
+    </p>
+
+    <!-- Communication Style -->
+    <div class="evo-block fade-in-up">
+      <div class="evo-text">
+        <h3>My Communication Identity: The Amiable</h3>
+        <p>
+          The <strong>Self-Perception Inventory (SPI)</strong> — a behavioral communication assessment — placed me squarely in the <strong>Amiable</strong> quadrant: people-oriented, a bridge-builder, and deeply motivated by harmony and consensus. As an Amiable, I'm often the glue holding teams together, attuned to emotions, and driven by genuine social connection.
+        </p>
+        <p>
+          Interestingly, my five PRS (Professional Reputation Survey) respondents collectively perceived me as <strong>Expressive</strong> — energetic, outgoing, and idea-oriented. This gap reveals something important: while I internally value steadiness and people harmony, those around me experience me as dynamic and forward-thinking. This alignment in warmth, combined with a difference in expressiveness, gives me a unique professional edge — I can be both the anchor and the spark.
+        </p>
+        <blockquote class="evo-quote">
+          "Bekzod is a strong leader who genuinely makes others feel valued and important." — PRS Respondent
+        </blockquote>
+      </div>
+      <div class="evo-charts">
+        <div class="chart-card">
+          <h4>Communication Style: Self vs. Others</h4>
+          <div class="style-grid">
+            <div class="style-quadrant">
+              <div class="quad-grid">
+                <div class="quad-cell quad-tl">Analytical</div>
+                <div class="quad-cell quad-tr">Driver</div>
+                <div class="quad-cell quad-bl quad-active-self">
+                  <span class="quad-me">Me (SPI)</span>Amiable
+                </div>
+                <div class="quad-cell quad-br">
+                  <span class="quad-others">Others (PRS)</span>Expressive
+                </div>
+                <div class="quad-axis-h"></div>
+                <div class="quad-axis-v"></div>
+                <div class="quad-label-x-low">Low Proactivity</div>
+                <div class="quad-label-x-high">High Proactivity</div>
+                <div class="quad-label-y-low">Low Reactivity</div>
+                <div class="quad-label-y-high">High Reactivity</div>
+              </div>
+            </div>
+          </div>
+          <div class="style-legend">
+            <span class="legend-me">● Me (SPI — Amiable)</span>
+            <span class="legend-others">● Others (PRS — Expressive)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRS Adjectives — STACKED layout: centered text top, dual charts below -->
+    <div class="evo-block-stacked fade-in-up">
+      <div class="evo-text evo-text-centered">
+        <h3>How Others See Me: A Vibrant Reputation</h3>
+        <p>
+          My five PRS respondents described me using a rich tapestry of adjectives. The most frequently chosen were <strong>Competitive</strong> and <strong>Outgoing</strong> (each 4 times), followed by <strong>Curious</strong>, <strong>Easygoing</strong>, <strong>Growth-Oriented</strong>, <strong>Independent</strong>, <strong>Leaderlike</strong>, <strong>Problem-Solver</strong>, <strong>Self-Confident</strong>, and <strong>Social</strong> (each 3 times).
+        </p>
+        <p>
+          In my self-assessment, I described myself as: <strong>Problem-Solver, Hard-Working, Curious, Competitive, Anxious, Empathetic, and Self-Confident</strong>. The overlap — especially in Curious, Competitive, Problem-Solver and Self-Confident — validates that my core self-identity is visible to others. The divergence (others see me as more Social and Outgoing than I rate myself) suggests I project more energy and openness than I consciously feel, which is a powerful ingredient for professional impact.
+        </p>
+        <p>
+          <em>Note: One respondent gave significantly lower scores due to a personal conflict and may not be representative of my overall impact. The qualitative feedback from other respondents paints a consistently positive picture.</em>
+        </p>
+      </div>
+      <div class="evo-charts-dual">
+        <div class="chart-card">
+          <h4>Word Cloud: Adjective Analysis</h4>
+          <img src="assets/images/radian word Cloud.png" alt="Radian Word Cloud – Adjective Analysis" class="evo-wordcloud" />
+          <div class="wordcloud-legend">
+            <span class="wc-blue">■ PRS Only (Others)</span>
+            <span class="wc-brown">■ SPI Only (Me)</span>
+            <span class="wc-orange">■ Both PRS &amp; SPI</span>
+          </div>
+        </div>
+        <div class="chart-card">
+          <h4>Top Adjective Frequency: PRS vs. Self</h4>
+          <canvas id="prsChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work Environment Preferences -->
+    <div class="evo-block fade-in-up">
+      <div class="evo-text">
+        <h3>Where I Thrive: Work Environment Preferences</h3>
+        <p>
+          The <strong>Work Environment Preferences (WEP)</strong> dimensions from my SPI reveal that I prefer direct, low-context communication, consensus-based decision-making, and environments where feedback is valued but delivered with care.
+        </p>
+        <p>
+          My standout scores: <strong>Feedback (2.33)</strong> and <strong>Relationships (2.33)</strong> point to a preference for cultures where trust is built through both work and social interaction. My low <strong>Context score (0.67)</strong> reflects my preference for clear, explicit messaging — a trait that aligns naturally with finance and data analysis environments.
+        </p>
+        <p>
+          My strong motivators — <strong>Social Interest</strong>, <strong>Financial Interest</strong>, and <strong>Decision-Making Interest</strong> — align perfectly with a career in wealth management, where client relationships, financial outcomes, and data-driven decisions converge.
+        </p>
+      </div>
+      <div class="evo-charts">
+        <div class="chart-card">
+          <h4>Work Environment Preferences</h4>
+          <canvas id="wepChart" width="350" height="350"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Charisma + Motivators -->
+    <div class="evo-block reverse fade-in-up">
+      <div class="evo-text">
+        <h3>Warmth, Competence &amp; Charisma</h3>
+        <p>
+          My Radian Charisma Diagnostic placed me in the <strong>Charismatic Zone</strong> — a space where warmth and confidence intersect. With a <strong>Warmth Quotient of 7.73</strong> and a <strong>Confidence Quotient of 7.27</strong>, I occupy the enviable position of being perceived as both approachable and credible.
+        </p>
+        <p>
+          The framework of <strong>Warmth, Competence, and Charisma</strong> — studied in BCOM 314 — teaches that the most compelling professionals don't sacrifice one for the other. My scores suggest I've developed a natural balance, which I've cultivated through international travel, cross-cultural work, and genuine curiosity about people.
+        </p>
+        <p>
+          My <strong>Growth Mindset</strong> is reflected throughout my feedback: respondents noted that I take challenges head-on, stay positive, and continuously seek to improve. The gap between intention and impact — something I'm always mindful of — is something I actively work on, especially around active listening and creating space for others to share in conversations.
+        </p>
+        <blockquote class="evo-quote">
+          "A very talented person who is always ready for any new task and challenges!" — PRS Respondent
+        </blockquote>
+      </div>
+      <div class="evo-charts">
+        <div class="chart-card charisma-card">
+          <h4>Charisma Profile</h4>
+          <div class="charisma-gauges">
+            <div class="gauge-item">
+              <div class="gauge-ring" data-value="77.3" data-color="#CBB26A">
+                <svg viewBox="0 0 120 120">
+                  <circle class="gauge-bg" cx="60" cy="60" r="50" />
+                  <circle class="gauge-fill" cx="60" cy="60" r="50" id="warmth-gauge" />
+                </svg>
+                <div class="gauge-label">
+                  <strong>7.73</strong>
+                  <span>Warmth</span>
+                </div>
+              </div>
+            </div>
+            <div class="gauge-item">
+              <div class="gauge-ring" data-value="72.7" data-color="#0F3F6D">
+                <svg viewBox="0 0 120 120">
+                  <circle class="gauge-bg" cx="60" cy="60" r="50" />
+                  <circle class="gauge-fill" cx="60" cy="60" r="50" id="confidence-gauge" />
+                </svg>
+                <div class="gauge-label">
+                  <strong>7.27</strong>
+                  <span>Confidence</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="charisma-zone">
+            <span class="zone-badge">⚡ Charismatic Zone</span>
+          </div>
+          <div class="motivators-mini">
+            <h5>Top Motivators</h5>
+            <div class="motivator-bar"><span>Intellectual/Analytical</span><div class="m-track"><div class="m-fill" style="--pct:99%"><span>99</span></div></div></div>
+            <div class="motivator-bar"><span>Social &amp; Helping</span><div class="m-track"><div class="m-fill" style="--pct:96%"><span>96</span></div></div></div>
+            <div class="motivator-bar"><span>Tradition/Values</span><div class="m-track"><div class="m-fill" style="--pct:92%"><span>92</span></div></div></div>
+            <div class="motivator-bar"><span>Networking &amp; Social</span><div class="m-track"><div class="m-fill" style="--pct:86%"><span>86</span></div></div></div>
+            <div class="motivator-bar"><span>Stability/Security</span><div class="m-track"><div class="m-fill" style="--pct:83%"><span>83</span></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 360 Feedback -->
+    <div class="feedback-360 fade-in-up">
+      <h3>Team 360° Feedback: Round 3 Highlights</h3>
+      <p class="feedback-intro">My team evaluated me across multiple performance dimensions. Here's how I scored:</p>
+      <div class="feedback-grid">
+        <div class="feedback-card">
+          <div class="feedback-score-wrap">
+            <div class="feedback-score">4.0 / 5</div>
+            <div class="feedback-label">Team Engagement</div>
+          </div>
+          <p>Always actively engaging — teammates perceive me as a team leader in participation.</p>
+        </div>
+        <div class="feedback-card">
+          <div class="feedback-score-wrap">
+            <div class="feedback-score">90%</div>
+            <div class="feedback-label">Amount of Effort</div>
+          </div>
+          <p>My effort highly meets or exceeds teammates' expectations — fully committed to team goals.</p>
+        </div>
+        <div class="feedback-card">
+          <div class="feedback-score-wrap">
+            <div class="feedback-score">89%</div>
+            <div class="feedback-label">Quality of Work</div>
+          </div>
+          <p>Quality of work meets or highly meets teammates' expectations — consistently delivering strong output.</p>
+        </div>
+        <div class="feedback-card">
+          <div class="feedback-score-wrap">
+            <div class="feedback-score">3.75 / 5</div>
+            <div class="feedback-label">Respecting Others' Ideas</div>
+          </div>
+          <p>Usually respectful of diverse perspectives — openness to new viewpoints is a recognized strength.</p>
+        </div>
+      </div>
+      <div class="team-quotes">
+        <div class="team-quote-card">
+          <p>"Bek did a great job of communicating with the team as well as professors and TAs. He took a big step forward in terms of his time management and it took a ton of stress off the group as a whole."</p>
+        </div>
+        <div class="team-quote-card">
+          <p>"I like Bekzod's work ethic, by trying to contribute positively with the group and often keeps us updated with due dates and meetings — he is an important part of our group."</p>
+        </div>
+        <div class="team-quote-card">
+          <p>"I liked how you suggested we practice our presentation together before presenting. That helped the group feel more confident and prepared."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reflection -->
+    <div class="reflection-section fade-in-up">
+      <h3>Looking Forward: My Professional Persona Vision</h3>
+      <div class="reflection-grid">
+        <div class="reflection-card">
+          <span class="reflection-icon">🧭</span>
+          <h4>Core Values in Action</h4>
+          <p>My values — curiosity, ambition, social connectedness — show up clearly in the adjectives both I and my peers selected. My Competitive and Problem-Solver nature drives me to pursue excellence, while my Empathetic and Caring qualities ensure I do so with genuine concern for others.</p>
+        </div>
+        <div class="reflection-card">
+          <span class="reflection-icon">🔄</span>
+          <h4>Intention vs. Impact</h4>
+          <p>I learned that my genuine care for others isn't always visible in every interaction. I'm intentionally working on active listening — creating more space for others to be heard. This is the nuance between good leadership and great leadership.</p>
+        </div>
+        <div class="reflection-card">
+          <span class="reflection-icon">📈</span>
+          <h4>Growth Mindset</h4>
+          <p>From my finance internship in Tashkent to campus leadership in Tucson, I've consistently taken on challenges bigger than my comfort zone allowed. Each semester, I grow — not just academically, but professionally and personally. This portfolio is one more step in that journey.</p>
+        </div>
+        <div class="reflection-card">
+          <span class="reflection-icon">🎯</span>
+          <h4>Where I'm Headed</h4>
+          <p>With my background in finance, international experience, and natural ability to connect with people, I'm targeting Asset and Wealth Management roles where I can blend analytical rigor with relationship-driven client work. My target audience: industry and academic leaders who value both data and humanity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PORTFOLIO SECTION ===================== -->
+  <section id="portfolio">
+    <div class="section-header">
+      <span class="section-label">Work Samples</span>
+      <h2 class="section-title">My <span class="accent">Portfolio</span></h2>
+    </div>
+    <p class="section-intro fade-in-up">
+      The following work samples showcase my professional skills across writing, data analysis and visualization, and visual design. Each represents a distinct aspect of my growing professional persona.
+    </p>
+    <div class="portfolio-grid fade-in-up">
+
+      <!-- Project 1 — Written / Solo -->
+      <div class="portfolio-card" id="proj1">
+        <div class="portfolio-card-front">
+          <div class="proj-tag sole-tag">Solo Work</div>
+          <div class="proj-icon">📄</div>
+          <h3>Regenerative Agriculture in Uzbekistan</h3>
+          <p class="proj-subtitle">Written Policy Analysis — Ministry of Finance Internship</p>
+          <div class="proj-skills">
+            <span>Economic Modeling</span>
+            <span>Policy Analysis</span>
+            <span>Data Research</span>
+          </div>
+          <button class="proj-explore" onclick="openModal('modal1')">Explore Project →</button>
+          <a href="assets/docs/project1-regenerative-agriculture.pdf" download class="btn-download">⬇ Download PDF</a>
+        </div>
+      </div>
+
+      <!-- Project 2 — Technical / Tableau -->
+      <div class="portfolio-card" id="proj2">
+        <div class="portfolio-card-front">
+          <div class="proj-tag team-tag">Team Project</div>
+          <div class="proj-icon">📊</div>
+          <h3>Business Analytics Dashboard</h3>
+          <p class="proj-subtitle">Tableau Data Visualization — BNAN 277</p>
+          <div class="proj-skills">
+            <span>Tableau Public</span>
+            <span>Dashboard Design</span>
+            <span>Data Analysis</span>
+          </div>
+          <button class="proj-explore" onclick="openModal('modal2')">Explore Project →</button>
+          <a href="assets/docs/project2-business-analytics-dashboard.pptx" download class="btn-download">⬇ Download Deck</a>
+        </div>
+      </div>
+
+      <!-- Project 3 — Visual / Canva -->
+      <div class="portfolio-card" id="proj3">
+        <div class="portfolio-card-front">
+          <div class="proj-tag team-tag">Team Project</div>
+          <div class="proj-icon">🎨</div>
+          <h3>Visual Design &amp; Brand Identity</h3>
+          <p class="proj-subtitle">Creative Design — Canva</p>
+          <div class="proj-skills">
+            <span>Canva</span>
+            <span>Visual Strategy</span>
+            <span>Brand Design</span>
+          </div>
+          <button class="proj-explore" onclick="openModal('modal3')">Explore Project →</button>
+          <a href="assets/docs/project3-topo-chico-visual-design.pdf" download class="btn-download">⬇ Download PDF</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== MODALS ===================== -->
+  <!-- Modal 1 -->
+  <div class="modal-overlay" id="modal1" onclick="closeModalOutside(event,'modal1')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modal1')">✕</button>
+      <div class="modal-tag sole-tag">Solo Work — Written Project</div>
+      <h2>Regenerative Agriculture in Uzbekistan</h2>
+      <p class="modal-context"><strong>Context:</strong> Created independently during my internship at the Ministry of Economy and Finance of Uzbekistan in Summer 2025. This policy analysis was submitted as a formal research brief to support government-level agricultural reform discussions.</p>
+
+      <h4>What I Did</h4>
+      <p>I authored this comprehensive 2027–2032 development outlook entirely on my own — conducting original research, building data models, and writing all policy recommendations. The report covers agricultural production dynamics, land and water resource challenges, and lessons from Australia, Brazil, and the USA.</p>
+
+      <h4>Skills Demonstrated</h4>
+      <ul class="modal-skills">
+        <li>📊 Quantitative data analysis from national statistical bodies (Uzbekistan Statistics Agency, FAO)</li>
+        <li>📈 Economic modeling — production volume forecasts, growth trend analysis</li>
+        <li>🌍 Comparative international policy research (3 countries)</li>
+        <li>✍️ Professional policy writing in Uzbek (native language)</li>
+        <li>📋 Government-level report formatting and policy recommendation design</li>
+      </ul>
+
+      <h4>Key Findings</h4>
+      <ul>
+        <li>Uzbekistan's agricultural output grew 1.78× between 2020–2024 (250T to 444.6T som)</li>
+        <li>65% of land (28M hectares) experiencing various degrees of degradation</li>
+        <li>Australia reduced chemical fertilizer use by 66–81% via mixed cropping — directly applicable to Uzbekistan</li>
+        <li>Proposed a 2027–2032 roadmap for regenerative agriculture adoption at national scale</li>
+      </ul>
+      <div class="modal-note">
+        <strong>Note:</strong> This project was completed entirely by me independently during my internship at the Ministry of Finance of Uzbekistan — a real professional deliverable, not a class assignment.
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal-overlay" id="modal2" onclick="closeModalOutside(event,'modal2')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modal2')">✕</button>
+      <div class="modal-tag team-tag">Team Project — Technical</div>
+      <h2>Business Analytics Dashboard — BNAN 277</h2>
+      <p class="modal-context"><strong>Context:</strong> Created as part of Group 13 in BNAN 277 (Business Analytics). The goal was to design an interactive data dashboard presenting business insights through compelling visualizations.</p>
+
+      <h4>My Specific Contributions</h4>
+      <ul class="modal-skills">
+        <li>📊 Built all Tableau visualizations and dashboards for the project</li>
+        <li>🎨 Designed the dashboard layout, color palette, and visual hierarchy</li>
+        <li>📈 Developed the data visualization strategy — selecting the right chart types for each insight</li>
+        <li>🔍 Conducted data cleaning and preparation in the underlying datasets</li>
+        <li>🗣️ Presented the technical visualization section during the final presentation</li>
+      </ul>
+
+      <h4>Skills Demonstrated</h4>
+      <ul>
+        <li>Tableau Public — interactive dashboards, filters, calculated fields</li>
+        <li>Data storytelling — translating raw data into clear business narratives</li>
+        <li>Visual hierarchy and dashboard UX design principles</li>
+        <li>Cross-functional team collaboration (Group 13)</li>
+      </ul>
+      <div class="modal-note">
+        <strong>My Role:</strong> I was solely responsible for all Tableau work and data visualizations in this team project. The analysis strategy and visual outputs are entirely my individual contribution to the team's success.
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal-overlay" id="modal3" onclick="closeModalOutside(event,'modal3')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modal3')">✕</button>
+      <div class="modal-tag team-tag">Team Project — Visual Design</div>
+      <h2>Visual Design &amp; Brand Identity</h2>
+      <p class="modal-context"><strong>Context:</strong> A team visual design project using Canva to produce professional marketing and brand communication materials. The project required demonstrating proficiency in visual communication principles.</p>
+
+      <h4>My Specific Contributions</h4>
+      <ul class="modal-skills">
+        <li>🎨 Led the visual design direction and brand identity for the team's materials</li>
+        <li>🖼️ Created all visual layouts, typography choices, and color schemes in Canva</li>
+        <li>📐 Applied visual hierarchy, whitespace, and contrast principles</li>
+        <li>📱 Ensured visual consistency across all design deliverables</li>
+        <li>🎯 Aligned visual outputs with the team's communication goals</li>
+      </ul>
+
+      <h4>Skills Demonstrated</h4>
+      <ul>
+        <li>Canva — advanced design, templates, brand kits</li>
+        <li>Visual communication and information design principles</li>
+        <li>Typography, color theory, and layout composition</li>
+        <li>Design-thinking approach to professional communication</li>
+      </ul>
+      <div class="modal-note">
+        <strong>My Role:</strong> I owned the visual design aspect of this team project — creating cohesive, professional-grade visuals that elevated the team's presentation quality.
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title">Let's Build Something <span class="accent">Together</span></h2>
+    </div>
+    <div class="contact-wrap fade-in-up">
+      <div class="contact-info">
+        <p class="contact-intro">
+          Whether you're a recruiter, professor, or fellow professional curious about my work — I'd love to connect. I'm currently exploring opportunities in wealth management, financial analysis, and data-driven business roles.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:bakhtiyorovb@arizona.edu" class="contact-link" id="email-link">
+            <span class="contact-link-icon">✉️</span>
+            <span>bakhtiyorovb@arizona.edu</span>
+          </a>
+          <a href="https://www.linkedin.com/in/bekzod-bakhtiyorov-6a7692325/" target="_blank" rel="noopener" class="contact-link" id="linkedin-link">
+            <span class="contact-link-icon">💼</span>
+            <span>LinkedIn Profile</span>
+          </a>
+          <a href="https://www.instagram.com/bekzodb__" target="_blank" rel="noopener" class="contact-link" id="instagram-link">
+            <span class="contact-link-icon">📸</span>
+            <span>Instagram</span>
+          </a>
+        </div>
+        <p class="contact-note">📍 Tucson, AZ · Open to remote and relocation opportunities</p>
+      </div>
+      <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <label for="cf-name">Your Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Jane Doe" required />
+        </div>
+        <div class="form-group">
+          <label for="cf-email">Your Email</label>
+          <input type="email" id="cf-email" name="email" placeholder="jane@company.com" required />
+        </div>
+        <div class="form-group">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" placeholder="Job Opportunity / Collaboration" />
+        </div>
+        <div class="form-group">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="I'd love to connect about…" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary form-submit" id="form-submit-btn">Send Message ✉️</button>
+        <div class="form-success" id="form-success">✅ Message sent! I'll get back to you soon.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">BB</div>
+      <p class="footer-tagline">Bekzod Bakhtiyorov · Finance & Entrepreneurship · Eller College of Management</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/bekzod-bakhtiyorov-6a7692325/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:bakhtiyorovb@arizona.edu">Email</a>
+        <a href="https://www.instagram.com/bekzodb__" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <p class="footer-copy">© 2026 Bekzod Bakhtiyorov. Crafted with intention.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#hero" id="back-to-top" aria-label="Back to top">↑</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
